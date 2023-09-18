@@ -1,0 +1,16 @@
+//Write a Java program to find first and last digit of a number.
+import java.util.Scanner;
+public class checkdigit {
+    public static void main(String[]args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int last_digit,first_digit=0;
+        last_digit=Math.abs(m%10);
+        while (m!= 0){
+            first_digit=m%10;
+            m/=10;
+        }
+        System.out.println("The First digit of the given number is:"+ first_digit );
+        System.out.println("The Last digit of the given number is :"+last_digit);
+    }
+}
