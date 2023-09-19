@@ -1,0 +1,25 @@
+//	Write a Java program to count number of digits in a number.
+import java.util.Scanner;
+public class countnoadigits {
+    public static void main(String[]args){
+    Scanner sc= new Scanner(System.in);
+    int digit,i;
+    int n=sc.nextInt();
+    int number=sc.nextInt();
+    int [] frequencydigits=new int[n];
+    while(number>0){
+        digit=number%10;
+        frequencydigits[digit]++;
+        number/=10;}
+
+    for(i=0;i<n;i++){
+        if(frequencydigits[i]>0)
+            System.out.println("digit"+i+":"+frequencydigits[i]+"times ");
+        }
+
+
+    }
+
+
+
+}
