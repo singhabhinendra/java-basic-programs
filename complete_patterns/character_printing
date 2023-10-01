@@ -1,0 +1,18 @@
+public class character_printing {
+    public static void main(String[] args) {
+        pattern(4);
+
+    }
+      static void pattern( int n){
+          char ch=65;
+        for(int i=1;i<=n;i++) {
+
+            for( int j=1;j<=i;j++){
+                System.out.print(ch+" ");
+                ch++;
+            }
+
+            System.out.println();
+        }
+    }
+}
