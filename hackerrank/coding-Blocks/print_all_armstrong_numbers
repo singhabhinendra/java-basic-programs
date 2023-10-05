@@ -1,0 +1,37 @@
+import java.lang.Math;
+public class Main {
+    static int get(int num)
+    {
+        int c=0;
+        int num2,num3,sum=0;
+        num2=num;
+        num3=num;
+        while(num2>0)
+        {
+            num2=num2/10;
+            c++;
+        }
+        while(num>0)
+        {
+            int a=num%10;
+            sum=sum+(int)(Math.pow(a,c));
+            num=num/10;
+        }
+        if(num3==sum)
+        return 1;
+        else
+        return 0;
+    }
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+    int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        for(int i=n1;i<=n2;i++)
+        {
+            int k=get(i);
+            if(k==1)
+            System.out.println(i);
+        }
+    
+    }
+}
