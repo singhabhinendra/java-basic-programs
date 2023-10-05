@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int f=0;
+        if(a==2 || a==3)
+        f=0;
+        for(int i=2;i<=a/2;i++)
+        {
+            if(a%i==0)
+            {
+                f=1;
+                break;
+            }
+        }
+        if(f==0)
+        System.out.print("Prime");
+        else
+        System.out.print("Not Prime");
+
+    }
+}
