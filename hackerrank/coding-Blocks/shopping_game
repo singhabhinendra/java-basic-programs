@@ -1,0 +1,41 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t>0)
+        {
+            int a=sc.nextInt();
+            int h=sc.nextInt();
+            int m=1,n=1,x=2,y=2,f=0,f1=0;
+            
+            while(true)
+            {
+                if(m<=a )
+                {
+                n=n+2;
+                m=m+n;
+                }
+                else
+                {f=1;
+                break;
+                }
+                if(y<=h)
+                {
+                x=x+2;
+                y=x+y;
+                }
+                else
+                {f1=1;
+                break;
+                }
+            }
+            if(f==1)
+            System.out.println("Harshit");
+            if(f1==1)
+               System.out.println("Aayush");
+               t--;
+        }
+        
+           }
+}
