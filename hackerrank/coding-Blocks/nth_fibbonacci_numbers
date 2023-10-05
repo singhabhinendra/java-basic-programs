@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+   public static void main(String args[]) {
+   Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int f0=0,f1=1,f2=0;
+        for(int i=2;i<=a;i++)
+        {
+            f2=f0+f1;
+            f0=f1;
+            f1=f2;
+        }
+        System.out.print(f2);
+    }
+}
