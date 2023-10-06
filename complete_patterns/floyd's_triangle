@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class floyds_triangle {
+    public static int  floydstriangle(int n) {
+        int counter=1;
+        //inner numbers
+       for(int i=1;i<=n;i++){
+           //how many times numbers is printed in a line
+            for(int j=1;j<=i;j++){
+                System.out.print(counter+" ");//number is printed in each line
+                counter++;
+            }
+            System.out.println();
+
+       }
+       return (counter);//return the counter
+    }
+
+    public static void main(String[] args) {
+        floydstriangle(7);//call the function
+        //print the floyd's triangle.
+
+    }
+}
