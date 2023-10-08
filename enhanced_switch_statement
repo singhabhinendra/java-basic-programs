@@ -1,0 +1,19 @@
+//enhanced switch statement
+import java.util.Scanner;
+public class switch_code1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String fruit =sc.next();
+        switch(fruit){
+            case"mango"-> {
+                System.out.println("mango is king of all fruits");
+                System.out.println("It is also  a national fruit");
+            }
+            case"watermelon"-> System.out.println("watermelon is a very hydrating fruit");
+            case"guava"-> System.out.println("guava is a sprerm making fuit in all fruits");
+            case"orange"-> System.out.println("orange is very useful in summer");
+            case"banana"-> System.out.println("banana is a protien enriched fruit");
+            default-> System.out.println("please enter a valid fruit name,this id not valid fruit name");
+        }
+    }
+}
