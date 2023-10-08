@@ -1,0 +1,26 @@
+//basic program to analyse the linear search algorithm in java.
+import java.util.Scanner;
+public class linear_search2 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();//size of array.
+        int arr[]=new int[n];//array definition
+        int ans=-1;
+        int target=4;
+        int i=0;
+        //Traversing the ARRAY For Input n Array Elements
+        for(i=0;i<n;i++) {
+            arr[i] = sc.nextInt();
+            System.out.println(arr[i])
+        }
+        //Traversing the ARRAY For Displaying Entered Elements and search the wanted element in array.
+        for (i = 0; i < n; i++) {
+            if (arr[i] == target) {
+                System.out.println("target is found at the index of" + i);//printing the value of index at which element found. 
+            }
+            else{
+                System.out.println(ans);
+            }
+        }
+    }
+}
