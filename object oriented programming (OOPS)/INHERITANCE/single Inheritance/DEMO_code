@@ -1,0 +1,24 @@
+//Example of Single_inheritance in java .
+//defining a first function .
+class G{
+    void get(){
+        System.out.println("hello");
+    }
+}
+//defining a second function in java.
+class H extends D{
+    void display(){
+        System.out.println("abhinendra");
+    }
+}
+//driver class.
+public class single_inheritance_01{
+    public static void main(String[] args) {
+        G g=new G();//making a object by new keyword because of function is called instance method into static method So, we have to call by making a object.
+        g.get();//calling the  first function by creating  object .
+        H h=new H();//making a object by new keyword because of function is called instance method into static method So, we have to call by making a object.
+        h.get();//making a object by new keyword because of function is called instance method into static method So, we have to call by making a object.
+        h.display();//calling the  first function by creating  object .
+    }
+
+}
