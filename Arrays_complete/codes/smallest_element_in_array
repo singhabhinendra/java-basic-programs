@@ -1,0 +1,18 @@
+//find the smallest element in the array.
+import java.util.Scanner;
+public class smallest_element_in_array {
+        public static int getsmallest(int number[]){
+            int smallest=Integer.MAX_VALUE;//+ve infinity.
+            for (int i = 0; i < number.length; i++) {
+                if(smallest>number[i]){
+                    smallest=number[i];
+
+                }
+            }
+            return smallest;
+        }
+        public static void main(String[] args) {
+            int number[]={1,2,3,4,5,5};
+            System.out.println(getsmallest(number));
+        }
+}
