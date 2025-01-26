@@ -1,4 +1,4 @@
- # Printing Techniques in Java
+👉👉👉 # Printing Techniques in Java
  ## In this README.md ,I show some examples for printing two or more variables by using Only one Print Statement and more.
 
 ## 1st Example- 
